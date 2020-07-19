@@ -1,0 +1,23 @@
+
+{% extends 'basic/dashboard.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<form action="" method="POST">
+    {%  csrf_token %}
+    <div class="col mx-5 my-5" >
+        {{form.as_p}}
+        <input type="submit" name="Submit"> 
+    </div>
+    
+</form>
+
+
+{% endblock %}
+
+
+
+
+
